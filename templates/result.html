@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Temperature Predictor</title>	
+  </head>
+
+  <body>
+    <div>Your values are: {{ year, month, hour, DEWP, HUMI }}</div>
+    <div>Amount of data loaded: {{ dataAmount }}</div>
+    <h3>Prediction of temperature is:</h3>
+    <div>{{ y_future }}$</div>
+    <br>
+    <div>Prediction Score: {{r2_score}} %</div>
+
+    <div id='button'>
+          <form action="/">
+            <input type=submit value='Try Another date'>
+          </form>
+    </div>
+
+  </body>
+</html>
